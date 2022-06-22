@@ -24,7 +24,7 @@ $partite = [
 
 for ($i=0; $i < count($partite); $i++) { 
 
-    echo "{$partite[$i]['squadraCasa']} {$partite[$i]['squadraOspite']} {$partite[$i]['puntiCasa']} {$partite[$i]['puntiOspite']}";
+    echo "{$partite[$i]['squadraCasa']} <p> - </p> {$partite[$i]['squadraOspite']} {$partite[$i]['puntiCasa']} {$partite[$i]['puntiOspite']}";
 }
 
 
