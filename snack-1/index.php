@@ -11,7 +11,7 @@ $partite = [
     [
         'squadraCasa' => 'Angeli',
         'squadraOspite' => 'Demoni',
-        'puntiCasa' => '3',
+        'puntiCasa' => '333',
         'puntiOspite' => '666',
     ],
     [
