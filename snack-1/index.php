@@ -24,8 +24,7 @@ $partite = [
 
 for ($i=0; $i < count($partite); $i++) { 
 
-    // echo $partite['squadraCasa'][$i];
-    echo $partite[$i]['squadraCasa'];
+    echo $partite[$i]['squadraCasa']. $partite[$i]['squadraOspite'].$partite[$i]['puntiCasa'].$partite[$i]['puntiOspite'];
 }
 
 
