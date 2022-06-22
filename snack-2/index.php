@@ -1,7 +1,8 @@
 <?php
-
+    $_GET['name'];
+    $_GET['email'];
+    $_GET['age'];
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +14,30 @@
 </head>
 <body>
 
-<!-- 
+    <!-- 
 
-Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) 
-che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. 
-Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
+    Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) 
+    che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. 
+    Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
 
--->
-    
+    -->
+
+    <?php 
+
+        if(strlen('name') > 3){
+
+            if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+                if(filter_var($age,FILTER_VALIDATE_INT)){
+                    echo "$email ACCESSO RIUSCITO";     
+                }
+            }
+            
+            else{
+                echo "$email ACCESSO NEGATO";
+            }
+        }
+    ?>
+
 </body>
 </html>
