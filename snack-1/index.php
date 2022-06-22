@@ -24,7 +24,7 @@ $partite = [
 
 for ($i=0; $i < count($partite); $i++) { 
 
-    echo "<p>{$partite[$i]['squadraCasa']} - {$partite[$i]['squadraOspite']} | {$partite[$i]['puntiCasa']} - {$partite[$i]['puntiOspite']}</p>";
+    echo "<p>{$partite[$i]['squadraCasa']} vs {$partite[$i]['squadraOspite']} | {$partite[$i]['puntiCasa']} - {$partite[$i]['puntiOspite']}</p>";
 }
 
 
